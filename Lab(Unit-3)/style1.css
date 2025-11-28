@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background: #0b4fa3;
+    padding: 15px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background: white;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.hero-text h2 span {
+    color: #ff5733;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-img img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* About */
+.about, .skills, .projects, .contact {
+    padding: 50px;
+}
+
+.about h2, .skills h2, .projects h2, .contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-box {
+    background: #0b4fa3;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.skill-box span {
+    display: block;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Projects */
+#projects{
+    padding:40px 20px;
+}
+project-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:25px;
+    max-width:900px;
+    margin:auto
+}
+.project-card {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid#ddd;
+    border-radius: 12px;
+    min-height:180px;
+    transition:0.3s ease;
+    cursor:pointer;
+}
+.project-card:hover{
+    transform:translate(-7px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    border-color:#0a4fff;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #0b4fa3;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    
+}
+.contact-form button:hover{
+    background-color: crimson;
+}
+
+
+/* Footer */
+footer {
+    background: #0b4fa3;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0b4fa3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* making the web page responsive uisng media queires */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-box {
+        min-height: 150px;
+        padding: 30px 18px;
+    }
+}
+
+/* TABLET RESPONSIVENESS */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-box {
+        min-height: 170px;
+    }
+}
